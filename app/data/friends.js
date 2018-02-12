@@ -2,7 +2,7 @@ var cryptids = [
     {
         name: "Sasquatch",
         photo: "https://sasquatchchronicles.com/wp-content/uploads/2016/12/Barmanou-302x300.jpg",
-        description: "As a lover of the forest, this guy is a good one to have on your side for maximum spooking in the great outdoors. This cryptid tends to have an unpleasant body odor, so be sure to pack some deodorizer, and of course offer it nicely, otherwise he might not want to work with you. Our friend Sasquatch is sometimes a fan of leaving large footprints behind, which is an ideal scenario for sparking your terrified friends' imaginations into a frightened frenzy!",
+        description: "As a lover of the forest, this guy is a good one to have on your side for maximum spooking in the great outdoors. This cryptid tends to have an unpleasant body odor, so be sure to pack some deodorant, and of course offer it nicely, otherwise he might not want to work with you. Our friend Sasquatch is sometimes a fan of leaving large footprints behind, which is an ideal scenario for sparking your friends' imaginations into a frightened frenzy!",
         scores: [
             3,
             1,
@@ -19,7 +19,7 @@ var cryptids = [
     {
         name: "The Loch Ness Monster",
         photo: "https://www.thesun.co.uk/wp-content/uploads/2016/10/nintchdbpict0002368798841.jpg?strip=all&w=960",
-        description: "If you're looking for a destination spooking, look no further than the Scottish Highlands, where you'll find the Loch Ness Monster. A slippery sort of fellow, this cryptid enjoys creating an ambiance of mystery and intrigue, only showing himself on occasion, and making sure to be seen only out of the corner of the eye, so no one can be truly sure about what they saw. With the Nessie's help, your friends will never want to swim again!",
+        description: "If you're looking for a destination spooking, look no further than the Scottish Highlands, where you'll find the Loch Ness Monster. A slippery sort of fellow, this cryptid enjoys creating an ambiance of mystery and intrigue, only showing himself on occasion, and making sure to be seen only out of the corner of the eye, so no one can be truly sure about what they saw. With Nessie's help, your friends will never want to swim again!",
         scores: [
             1,
             2,
@@ -71,7 +71,7 @@ var cryptids = [
     {
         name: "Jackalope",
         photo: "http://cdn.shopify.com/s/files/1/0288/5332/files/jackalope_in_the_wild_large.jpg?11502701639502724114",
-        description: "This little guy has been taxidermied so many times, it's no wonder he's out for revenge. With an insatiable thirst for Whiskey and the ability to imitate any human voice, the Jackalope is sure to spook anyone who is willing to risk a trek into the Wyoming wilderness. This cryptid may be small, but watch out if you don't have stovepipes on your legs for protection, you'll be gored before you know it.",
+        description: "This little guy has been taxidermied so many times, it's no wonder he's out for revenge. With an insatiable thirst for Whiskey and the ability to imitate any human voice, the Jackalope is sure to spook anyone willing to risk a trek into the Wyoming wilderness. This cryptid may be small, but watch out if you don't have stovepipes on your legs for protection; you'll be gored before you know it.",
         scores: [
             2,
             2,
@@ -105,7 +105,7 @@ var cryptids = [
     {
         name: "The Kraken",
         photo: "http://2.bp.blogspot.com/-iF4qaYrRbaE/TpTWDRVirbI/AAAAAAAAHio/N6-HnX_bkos/s1600/kraken.gif",
-        description: "Found mainly around Scandinavia, The Kraken is fond of taking down entire vessels with his long, undulating tentacles. This squid-like creature is so large he is sometimes mistaken for an island, but don't be fooled! The Kracken will stop at nothing to take your friends down, so if a full-on ship sinking is your jam, this cryptid will surely do it justice!",
+        description: "Found mainly around Scandinavia, The Kraken is fond of taking down entire vessels with his long, undulating tentacles. This squid-like creature is so large he is sometimes mistaken for an island, but don't be fooled! The Kraken will stop at nothing to take your friends down, so if a full-on ship sinking is your jam, this cryptid will surely do it justice!",
         scores: [
             1,
             2,
@@ -122,7 +122,7 @@ var cryptids = [
     {
         name: "Mothman",
         photo: "https://imgix.ranker.com/user_node_img/50064/1001273421/original/the-mothman-saved-the-lives-of-miners-in-freiburg-germany-photo-u1?w=650&q=50&fm=jpg&fit=crop&crop=faces",
-        description: "Thanks to his moth wings, the Mothman can fly his way into any spooky time. With the possibilty of being an alian, the Mothman can swoop in with his glowing red eyes and scare the pants off of any friend you like. If you've got any friends with a penchant for UFO sightings or aliens in general, this cryptid will certainly deliver.",
+        description: "Thanks to his moth wings, the Mothman can fly his way into any spooky time. With the possibilty of being an alien, the Mothman can swoop in with his glowing red eyes and scare the pants off of any friend you like. If you've got any friends with a penchant for UFO sightings or aliens in general, this cryptid will certainly deliver.",
         scores: [
             1,
             1,
@@ -139,7 +139,7 @@ var cryptids = [
     {
         name: "The Cornish Owlman",
         photo: "http://www.lazerhorse.org/wp-content/uploads/2014/07/Owlman-Mawnan-Artists-Impression.jpg",
-        description: "It's a bird! It's a plane! No, it's Owlman! Found in the village of Mawnan in England, this man-sized bird creature hoots his way into any vacation. This particular cryptid is not one for direct action, so if you're looking for just a mild spooking, the Cornish Owlman is where it's at.",
+        description: "It's a bird! It's a plane! No, it's Owlman! Found in the village of Mawnan in England, this man-sized bird creature hoots his way into any countryside vacation. This particular cryptid is not one for direct action, so if you're looking for just a mild spooking, the Cornish Owlman is where it's at.",
         scores: [
             4,
             3,
@@ -156,7 +156,7 @@ var cryptids = [
     {
         name: "Snallygaster",
         photo: "http://2.bp.blogspot.com/-oCl-18azx24/VNpT8Dse45I/AAAAAAAAUko/Qzc4PGWV2S8/s1600/Snallygaster%2B002.jpg",
-        description: "Although the name sounds silly, the Snallygaster is absolutely nothing to laugh at. This cryptid boasts a terrifying appearance of bird, reptile, and demon-like features. If you're looking for the unexpected, the Snallygaster is more than happy to swoop in and silently carry off his victims. He often likes to drink the blood of those he's captured, but whether he does or not is up to you!",
+        description: "Although the name sounds silly, the Snallygaster is absolutely nothing to laugh at. This cryptid boasts a terrifying appearance of bird, reptile, and demon-like features. If you're looking for the unexpected, the Snallygaster is more than happy to swoop in and silently carry off your friends. He often likes to drink the blood of those he's captured, but whether he does or not is up to you!",
         scores: [
             1,
             4,

@@ -5,7 +5,6 @@ module.exports = function(app) {
 
     app.get("/home", function(req, res) {
         res.sendFile(path.join(__dirname, "../public/home.html"));
-        // res.sendFile(path.join(__dirname, "../public/assets/css/style.css"));
     });
 
     app.use(express.static(path.join(__dirname, "../public")));
