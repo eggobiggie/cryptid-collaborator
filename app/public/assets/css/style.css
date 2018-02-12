@@ -1,6 +1,6 @@
 body {
     background: url("../images/tree.jpeg");
-    background-size: 175%;
+    background-size: 180%;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -31,6 +31,7 @@ main {
 
 .surveyIcon {
     color: black;
+    margin-bottom: 200px;
 }
 
 .surveyButton {
@@ -59,4 +60,8 @@ main {
 .questionTitle {
     font-weight: bold;
     font-size: 20px;
+}
+
+#footerText {
+    margin-bottom: 10px;
 }
