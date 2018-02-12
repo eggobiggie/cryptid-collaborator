@@ -1,6 +1,6 @@
 body {
     background: url("../images/tree.jpeg");
-    background-size: 150%;
+    background-size: 175%;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -30,7 +30,6 @@ main {
 }
 
 .surveyIcon {
-    /* text-shadow: 1px 1px 1px #000; */
     color: black;
 }
 
@@ -46,14 +45,18 @@ main {
 
 #surveyPanel {
     height: 100%;
-    padding-top: 20px;
+    padding-top: 40px;
     padding-bottom: 20px;
     border-radius: 5px;
     background-color: #e0f2f1;
-    /* opacity: 0.9; */
 }
 
 #finalSubmit {
     padding-right: 50px;
     padding-left: 50px;
+}
+
+.questionTitle {
+    font-weight: bold;
+    font-size: 20px;
 }
