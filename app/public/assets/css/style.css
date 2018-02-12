@@ -52,9 +52,14 @@ main {
     background-color: #e0f2f1;
 }
 
-#finalSubmit {
+.finalSubmit {
     padding-right: 50px;
     padding-left: 50px;
+}
+
+#backButton {
+    padding-left: 35px;
+    padding-right: 35px;
 }
 
 .questionTitle {
