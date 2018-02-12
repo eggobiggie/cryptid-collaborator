@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <main class="container">
         <div class="row">
             <h1 class="center-align teal-text text-lighten-5 cryptidTitle" id="theSurveyTitle">Cryptid Collaborator: The Survey</h1>
         </div>
@@ -171,20 +171,36 @@
         </div>
         <div class="row">
             <div class="col s12 center-align">
-                <button class="waves-effect teal lighten-5 waves-light btn surveyButton surveyIcon" type="submit" name="action" id="finalSubmit">Submit!
+                <button class="waves-effect teal lighten-5 waves-light btn surveyButton surveyIcon modal-trigger" href="#modal1" type="submit" name="action" id="finalSubmit">Submit!
                     <i class="material-icons right">send</i>
                 </button>                    
             </div>
         </div>
+        <!-- MODAL TEST -->
+        <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4 class="center-align" id="modalHeader">You Got Sasquatch!</h4>
+          <div class="row">
+            <img class="col s6 left-align"src="https://vignette.wikia.nocookie.net/cryptidz/images/8/8d/Sasquatch.png/revision/latest/scale-to-width-down/371?cb=20150812141705" alt="">
+          <p class="col s6" id="modalDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultrices elit neque, 
+         eget consectetur mauris tincidunt iaculis. Etiam pulvinar felis quis risus accumsan convallis. 
+         Phasellus cursus ac orci nec malesuada. Etiam dignissim sollicitudin orci at vehicula. 
+         Vivamus a egestas nisi, euismod fringilla turpis.</p>
+        </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Let's get spooky!</a>
+        </div>
+        </div>
     <!-- END OF CONTAINER -->
-    </div>
+    </main>
     <!-- FOOTER -->
     <footer>
         <div class="footer-copyright">
             <div class="container">
                 <div class="center-align">
                     <p id="footerText">
-                        <a class="teal-text text-lighten-5 linkText" href="#!">API Friends List || </a>
+                        <a class="teal-text text-lighten-5 linkText" href="#!">API Cryptids List || </a>
                         <a class="teal-text text-lighten-5" href="https://github.com/eggobiggie/friend-finder" target="_blank">GitHub Repo</a>
                     </p>
                 </div>
@@ -195,5 +211,4 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script type="text/javascript" src="./assets/javascript/app.js"></script>
 </body>
-
 </html>
