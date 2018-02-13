@@ -10,7 +10,6 @@ main {
     flex: 1 0 auto;
   }
      
-
 .cryptidTitle {
     margin-top: 125px;
     font-family: 'Trade Winds', cursive;
@@ -73,4 +72,8 @@ main {
 
 #modalHeader {
     font-family: 'Trade Winds', cursive;
+}
+
+#modalDescription {
+    line-height: 1.5;
 }

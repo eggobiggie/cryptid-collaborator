@@ -8,6 +8,6 @@ module.exports = function(app) {
 
 }
 
-app.post("/api/cryptids", function(req, res) {
+// app.post("/api/cryptids", function(req, res) {
     //post data to module on survey page
-});
+// });
