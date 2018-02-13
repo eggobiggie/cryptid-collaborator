@@ -222,20 +222,37 @@
             };
 
             console.log(newPerson);
-
+            
+            //Grab survey responses
             var newSurvey = {
-                question1: $("#question1").val(),
-                question2: $("#question2").val(),
-                question3: $("#question3").val(),
-                question4: $("#question4").val(),
-                question5: $("#question5").val(),
-                question6: $("#question6").val(),
-                question7: $("#question7").val(),
-                question8: $("#question8").val(),
-                question9: $("#question9").val(),
-                question10: $("#question10").val()
+                question1: parseInt($("#question1").val()),
+                question2: parseInt($("#question2").val()),
+                question3: parseInt($("#question3").val()),
+                question4: parseInt($("#question4").val()),
+                question5: parseInt($("#question5").val()),
+                question6: parseInt($("#question6").val()),
+                question7: parseInt($("#question7").val()),
+                question8: parseInt($("#question8").val()),
+                question9: parseInt($("#question9").val()),
+                question10: parseInt($("#question10").val())
             };
-            console.log(newSurvey);
+
+            //Turn survey results into an array held in a variable
+            var newSurveyArray = Object.values(newSurvey)
+            console.log("this is the array: " + newSurveyArray);
+
+            //Add results from user survey 
+            function getSum(total, num) {
+                return total + num;
+            };
+            //Put sum into variable
+            var newSurveyArraySum = newSurveyArray.reduce(getSum);
+            console.log("Your total score is " + newSurveyArraySum);
+
+            //Clear forms when submitting
+            $("#name").val("");
+            $("#photo").val("");
+            
         });
 
     </script>
