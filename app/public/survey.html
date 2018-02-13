@@ -200,7 +200,7 @@
             <div class="container">
                 <div class="center-align">
                     <p id="footerText">
-                        <a class="teal-text text-lighten-5 linkText" href="#!">API Cryptids List || </a>
+                        <a class="teal-text text-lighten-5 linkText" href="/api/cryptids">API Cryptids List || </a>
                         <a class="teal-text text-lighten-5" href="https://github.com/eggobiggie/friend-finder" target="_blank">GitHub Repo</a>
                     </p>
                 </div>
@@ -252,6 +252,15 @@
             //Clear forms when submitting
             $("#name").val("");
             $("#photo").val("");
+
+            //get scores from api
+            $.get("/api/cryptids", function(data){
+                for (var i = 0; i < data.length; i++) {
+                // console.log(data[i].name);
+                var newMonsterScores = data[i].scores.reduce(getSum);
+                console.log("Monster name: " + data[i].name + " Monster scores: " + newMonsterScores);
+                }
+            });
             
         });
 

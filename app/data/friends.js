@@ -56,9 +56,9 @@ var cryptids = [
         // IMAGE CREDIT: 000Fesbra000 on DeviantArt: https://www.deviantart.com/art/Chupacabra-665168506
         description: 'With a name that can be literally translated as "goat-sucker", this reptilian creature really gets the job done. With a history of sucking blood from so many animals that his work was attributed to a satanic cult, you know the Chupacabra means business. If you have any friends who live and/or work on farms, this cryptid is surely the way to go!',
         scores: [
-            1,
-            5,
             2,
+            5,
+            3,
             5,
             2,
             2,
@@ -73,10 +73,10 @@ var cryptids = [
         photo: "http://cdn.shopify.com/s/files/1/0288/5332/files/jackalope_in_the_wild_large.jpg?11502701639502724114",
         description: "This little guy has been taxidermied so many times, it's no wonder he's out for revenge. With an insatiable thirst for Whiskey and the ability to imitate any human voice, the Jackalope is sure to spook anyone willing to risk a trek into the Wyoming wilderness. This cryptid may be small, but watch out if you don't have stovepipes on your legs for protection; you'll be gored before you know it.",
         scores: [
-            2,
+            4,
             2,
             1,
-            2,
+            3,
             1,
             4,
             5,
@@ -93,13 +93,13 @@ var cryptids = [
             5,
             5,
             5,
-            3,
-            1,
-            3,
+            4,
             2,
-            1,
+            3,
+            4,
             2,
-            4
+            2,
+            5
         ]
     },
     {
@@ -165,7 +165,7 @@ var cryptids = [
             1,
             4,
             3,
-            4,
+            5,
             2,
             5
         ]
@@ -176,13 +176,13 @@ var cryptids = [
         description: "Found mainly in Nepal, the Yeti loves nothing more than a good snowball fight. That or freaking out some of your closest friends. Having lived his entire life in the snowy mountains, the Yeti prefers to work alone. Marching around with stone weaponry and emerging out of nowhere through blizzards, the Yeti is a great option for some snow day fun.",
         scores: [
             2,
-            2,
             1,
-            4,
             1,
-            5,
+            3,
+            1,
+            3,
+            1,
             2,
-            4,
             1,
             2
         ]
