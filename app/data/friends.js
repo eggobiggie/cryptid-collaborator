@@ -4,13 +4,13 @@ var cryptids = [
         photo: "https://sasquatchchronicles.com/wp-content/uploads/2016/12/Barmanou-302x300.jpg",
         description: "As a lover of the forest, this guy is a good one to have on your side for maximum spooking in the great outdoors. This cryptid tends to have an unpleasant body odor, so be sure to pack some deodorant, and of course offer it nicely, otherwise he might not want to work with you. Our friend Sasquatch is sometimes a fan of leaving large footprints behind, which is an ideal scenario for sparking your friends' imaginations into a frightened frenzy!",
         scores: [
-            3,
+            1,
             1,
             2,
-            5,
+            4,
             1,
             5,
-            2,
+            1,
             1,
             2,
             1
@@ -58,12 +58,12 @@ var cryptids = [
         scores: [
             2,
             5,
-            3,
+            5,
             5,
             2,
             2,
+            5,
             4,
-            3,
             4,
             2
         ]
@@ -98,7 +98,7 @@ var cryptids = [
             3,
             4,
             2,
-            2,
+            4,
             5
         ]
     },

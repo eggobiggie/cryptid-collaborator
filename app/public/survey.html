@@ -254,28 +254,25 @@
             $("#name").val("");
             $("#photo").val("");
 
-            var sumArray = [];
+            var lowestScoreSoFar = 1000;
+            var winningScoreIndex = 0;
 
             //get scores from api and add them together
             $.get("/api/cryptids", function(data) {
-                for (var i = 0; i < data.length; i++) {
+
+                for (var i = 0; i < data.length; i++) {      
                     var cryptidScoresSum = data[i].scores.reduce(getSum);
                     console.log("Monster name: " + data[i].name + " Monster score: " + cryptidScoresSum);
                     //Find difference between user score and cryptid scores in absolute values
                     var totalDifference = Math.abs(newSurveyArraySum - cryptidScoresSum);  
-                    sumArray.push(totalDifference);
-                    console.log("total difference: " + totalDifference);
-                }
-                console.log("The array of sums " + sumArray);
-                var minimumDifference = Math.min(...sumArray);
-                //Need to target specific cryptid
-                for (var j = 0; j < data.length; j++) {
-                    if (minimumDifference < totalDifference) {
-                        console.log("The winner is " + data.name);
+                    //If this is the lowest total, hold onto it:
+                    if (totalDifference < lowestScoreSoFar) {
+                        lowestScoreSoFar = totalDifference;
+                        winningScoreIndex = i;
                     }
                 }
+                console.log("Winning cryptid should be: " + data[winningScoreIndex].name);
             });
-            
         });
 
     </script>
