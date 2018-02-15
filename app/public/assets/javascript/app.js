@@ -1,5 +1,14 @@
 $(document).ready(function() {
 
+    $("select[required]").css({
+      position: 'absolute', 
+      display: 'inline', 
+      height: 0, 
+      padding: 0, 
+      width: 0
+    });
+
+
   //jQuery for Materialize
     $('select').material_select();
     $('.modal').modal({
