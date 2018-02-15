@@ -179,13 +179,13 @@
                 </button>                    
             </div>
         </div>
-        <!-- MODAL TEST -->
+        <!-- MODAL -->
         <div id="modal1" class="modal">
             <div class="modal-content">
-                <h4 class="center-align" id="modalHeader">You Got Snallygaster!</h4>
+                <h4 class="center-align" id="cryptidHeader"></h4>
                 <div class="row">
-                    <img class="col s6 left-align"src="http://2.bp.blogspot.com/-oCl-18azx24/VNpT8Dse45I/AAAAAAAAUko/Qzc4PGWV2S8/s1600/Snallygaster%2B002.jpg" alt="">
-                    <p class="col s6" id="modalDescription">Although the name sounds silly, the Snallygaster is absolutely nothing to laugh at. This cryptid boasts a terrifying appearance of bird, reptile, and demon-like features. If you're looking for the unexpected, the Snallygaster is more than happy to swoop in and silently carry off your friends. He often likes to drink the blood of those he's captured, but whether he does or not is up to you!</p>
+                    <img class="col s6 left-align" id="cryptidImage" src="" alt="">
+                    <p class="col s6" id="cryptidDescription"></p>
                 </div>
             </div>
             <div class="modal-footer">
@@ -210,71 +210,5 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script type="text/javascript" src="./assets/javascript/app.js"></script>
-    <script type="text/javascript">
-
-        $("#submit").on("click", function(event) {
-            event.preventDefault();
-            
-            //Grab user information
-            var newPerson = {
-                userName: $("#name").val().trim(),
-                userPhoto: $("#photo").val().trim()
-            };
-
-            console.log(newPerson);
-            
-            //Grab survey responses
-            var newSurvey = {
-                question1: parseInt($("#question1").val()),
-                question2: parseInt($("#question2").val()),
-                question3: parseInt($("#question3").val()),
-                question4: parseInt($("#question4").val()),
-                question5: parseInt($("#question5").val()),
-                question6: parseInt($("#question6").val()),
-                question7: parseInt($("#question7").val()),
-                question8: parseInt($("#question8").val()),
-                question9: parseInt($("#question9").val()),
-                question10: parseInt($("#question10").val())
-            };
-
-            //Turn survey results into an array held in a variable
-            var newSurveyArray = Object.values(newSurvey)
-            // console.log("this is the array: " + newSurveyArray);
-
-            //Add results from user survey 
-            function getSum(total, num) {
-                return total + num;
-            };
-            
-            //Put sum into variable
-            var newSurveyArraySum = newSurveyArray.reduce(getSum);
-            console.log("Your total score is " + newSurveyArraySum);
-
-            //Clear forms when submitting
-            $("#name").val("");
-            $("#photo").val("");
-
-            var lowestScoreSoFar = 1000;
-            var winningScoreIndex = 0;
-
-            //get scores from api and add them together
-            $.get("/api/cryptids", function(data) {
-
-                for (var i = 0; i < data.length; i++) {      
-                    var cryptidScoresSum = data[i].scores.reduce(getSum);
-                    console.log("Monster name: " + data[i].name + " Monster score: " + cryptidScoresSum);
-                    //Find difference between user score and cryptid scores in absolute values
-                    var totalDifference = Math.abs(newSurveyArraySum - cryptidScoresSum);  
-                    //If this is the lowest total, hold onto it:
-                    if (totalDifference < lowestScoreSoFar) {
-                        lowestScoreSoFar = totalDifference;
-                        winningScoreIndex = i;
-                    }
-                }
-                console.log("Winning cryptid should be: " + data[winningScoreIndex].name);
-            });
-        });
-
-    </script>
 </body>
 </html>

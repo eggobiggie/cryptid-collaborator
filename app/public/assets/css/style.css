@@ -70,10 +70,10 @@ main {
     margin-bottom: 10px;
 }
 
-#modalHeader {
+#cryptidHeader {
     font-family: 'Trade Winds', cursive;
 }
 
-#modalDescription {
+#cryptidDescription {
     line-height: 1.5;
 }

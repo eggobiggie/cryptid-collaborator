@@ -6,9 +6,10 @@ module.exports = function(app) {
         res.json(cryptidData);
     });
 
+    app.post("/api/cryptids", function(req, res) {
+        friends.push(req.body);
+        res.json(true);
+    });
+
 }
 
-// app.post("/api/cryptids", function(req, res) {
-    //if difference between user survey and cryptid is closest,
-    //post data to module on survey page
-// });
