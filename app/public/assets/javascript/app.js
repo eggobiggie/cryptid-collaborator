@@ -44,23 +44,23 @@ $(document).ready(function() {
                   everythingValid = false;
               }
               for (var i = 0; i < this.questions.length; i ++) {
-              if (!this.questions[i]) {
-                everythingValid = false;
-              } 
-          }
-          if (!everythingValid) {
-            $('.modal').modal();
-            $('#cryptidHeader').replaceWith("<h1 id='cryptidHeader' class='center-align'>You need to fill out everything!</h1>");
-            $("#cryptidDescription").clear();
-            $("#cryptidImage").clear();
-          } else {
-            $('.modal').modal({
-                complete: function() {
-                  $("#cryptidHeader").empty();
-                  $("#cryptidDescription").empty();
-                }
-            });
-          }
+                if (!this.questions[i]) {
+                  everythingValid = false;
+                } 
+              }
+              if (!everythingValid) {
+                $('.modal').modal();
+                $('#cryptidHeader').replaceWith("<h1 id='cryptidHeader' class='center-align'>You need to fill out everything!</h1>");
+                $("#cryptidDescription").clear();
+                $("#cryptidImage").clear();
+              } else {
+                $('.modal').modal({
+                    complete: function() {
+                      $("#cryptidHeader").empty();
+                      $("#cryptidDescription").empty();
+                    }
+                });
+              }
         }
     };
 
