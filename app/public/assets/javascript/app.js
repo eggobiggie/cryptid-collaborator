@@ -19,6 +19,7 @@ $(document).ready(function() {
       
     $("#cryptidHeader").empty();
     $("#cryptidDescription").empty();
+    $("#cryptidImage").attr("src", "");
    
      //Grab survey responses
     var newSurvey = {
@@ -48,14 +49,17 @@ $(document).ready(function() {
               } 
           }
           if (!everythingValid) {
-            Materialize.toast('You need to fill in all of the information!', 4000);
+            $('.modal').modal();
+            $('#cryptidHeader').replaceWith("<h1 id='cryptidHeader' class='center-align'>You need to fill out everything!</h1>");
+            $("#cryptidDescription").clear();
+            $("#cryptidImage").clear();
           } else {
             $('.modal').modal({
                 complete: function() {
                   $("#cryptidHeader").empty();
                   $("#cryptidDescription").empty();
                 }
-              });
+            });
           }
         }
     };
