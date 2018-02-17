@@ -31,7 +31,7 @@
                     <label for="name">Your Name (Required)</label>
                 </div>
                 <div class="input-field col s10 offset-s1">
-                    <input type="text" id="photo" class="validate">
+                    <input type="text" id="photo" class="validate" required="" aria-required="true">
                     <label for="photo">Link to Photo Image (Required)</label>
                 </div>
             </div>
@@ -40,8 +40,8 @@
                 <div class="row">
                     <div class="input-field col s10 offset-s1">
                         <p class="questionTitle">Question 1: I like to express myself verbally</p>
-                        <select id="question1">
-                            <option value="" disabled selected>Choose Answer</option>
+                        <select id="question1" required class="validate">
+                            <option value="" required disabled selected>Choose Answer</option>
                             <option value="1">1 - Completely Disagree</option>
                             <option value="2">2 - Somewhat Disagree</option>
                             <option value="3">3 - Neutral</option>
@@ -208,6 +208,7 @@
         </div>
     </footer>   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script type="text/javascript" src="./assets/javascript/app.js"></script>
 </body>
