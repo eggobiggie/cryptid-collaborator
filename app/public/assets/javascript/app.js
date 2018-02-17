@@ -19,9 +19,7 @@ $(document).ready(function() {
       
     $("#cryptidHeader").empty();
     $("#cryptidDescription").empty();
-    event.preventDefault();
-
-      
+   
      //Grab survey responses
     var newSurvey = {
         userName: $("#name").val().trim(),
