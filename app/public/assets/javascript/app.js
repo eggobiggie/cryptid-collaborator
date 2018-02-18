@@ -9,7 +9,7 @@ $(document).ready(function() {
     });
 
   //jQuery for Materialize
-    $('select').material_select();
+  $('select').material_select();
 
    //On click for submitting survey: 
    
@@ -24,13 +24,11 @@ $(document).ready(function() {
      //Grab survey responses
     var newSurvey = {
         userName: $("#name").val().trim(),
-        userPhoto: $("#photo").val().trim(),
         questions: [
             parseInt($("#question1").val()),
             parseInt($("#question2").val()),
             parseInt($("#question3").val()),
             parseInt($("#question4").val()),
-            parseInt($("#question5").val()),
             parseInt($("#question5").val()),
             parseInt($("#question6").val()),
             parseInt($("#question7").val()),
@@ -40,7 +38,7 @@ $(document).ready(function() {
           ],
         surveyValid: function() {
             var everythingValid = true;
-              if (!this.userName || !this.userPhoto) {
+              if (!this.userName) {
                   everythingValid = false;
               }
               for (var i = 0; i < this.questions.length; i ++) {
@@ -50,7 +48,7 @@ $(document).ready(function() {
               }
               if (!everythingValid) {
                 $('.modal').modal();
-                $('#cryptidHeader').replaceWith("<h1 id='cryptidHeader' class='center-align'>You need to fill out everything!</h1>");
+                $('#cryptidHeader').replaceWith("<h4 id='cryptidHeader' class='center-align'>You need to fill out everything!</h4>");
                 $("#cryptidDescription").clear();
                 $("#cryptidImage").clear();
               } else {
@@ -60,6 +58,7 @@ $(document).ready(function() {
                       $("#cryptidDescription").empty();
                     }
                 });
+                $("#cryptidHeader").prepend(newSurvey.userName + ", you got ");
               }
         }
     };
@@ -98,6 +97,7 @@ $(document).ready(function() {
                   winningScoreIndex = i;
         }
     }
+    //Update module info upon win
     console.log("Winning cryptid should be: " + data[winningScoreIndex].name);
     if (data[winningScoreIndex].name) {
         $("#cryptidHeader").append(data[winningScoreIndex].name);
@@ -105,7 +105,17 @@ $(document).ready(function() {
         $("#cryptidDescription").append(data[winningScoreIndex].description);
     }
     });
+
+    //Post user input into users file
+    $.post("/api/users/", {name: newSurvey.userName, 'scores': newSurvey.questions}, 
+      function(data) {
+        console.log("something here is going");
+        if (data) {
+          console.log(data);
+        }
+      });
   });
 });
+
 
          

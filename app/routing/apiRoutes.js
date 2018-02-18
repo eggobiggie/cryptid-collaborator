@@ -1,4 +1,5 @@
 var cryptidData = require("../data/friends");
+var userData = require("../data/users")
 
 module.exports = function(app) {
 
@@ -6,9 +7,8 @@ module.exports = function(app) {
         res.json(cryptidData);
     });
 
-    app.post("/api/cryptids", function(req, res) {
-        friends.push(req.body);
-        res.json(true);
+    app.get("/api/users", function(req, res) {
+        res.json(userData);
     });
 
 }
