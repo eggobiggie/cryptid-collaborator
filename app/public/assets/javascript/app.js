@@ -107,9 +107,8 @@ $(document).ready(function() {
     });
 
     //Post user input into users file
-    $.post("/api/users/", {name: newSurvey.userName, 'scores': newSurvey.questions}, 
+    $.post("/api/users/", {name: newSurvey.userName, scores: newSurvey.questions}, 
       function(data) {
-        console.log("something here is going");
         if (data) {
           console.log(data);
         }

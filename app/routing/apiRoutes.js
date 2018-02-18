@@ -11,5 +11,11 @@ module.exports = function(app) {
         res.json(userData);
     });
 
+    app.post("/api/users", function(req, res) {
+        newUser = req.body;
+        userData.push(newUser);
+        res.json(newUser);
+    });
+
 }
 
